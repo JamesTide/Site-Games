@@ -1,0 +1,286 @@
+html{
+    height: 100%;
+}
+.header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.pesquisa div { 
+    margin: 10px;
+    display: flex;
+}
+
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+.footer a{
+        text-decoration: none;
+        color: white;
+}
+
+                                            /* Corpo do site */
+
+.logo1{
+    grid-column: 1 / 5;
+}
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.resto{
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.Destaques{
+    background-color: #d3d3d3;
+}
+
+h1{
+    font-size: 150%;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 100%;
+}
+.g{
+    grid-column: 2;
+    margin: 0;
+    font-size: 100%;
+}
+.v{
+    grid-column: 1;
+    grid-row: 1 / 8;
+}
+.topico2{
+    padding: 20px;
+    font-size: 150%;
+}
+.glancamentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.lancamentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+.l{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.lt{
+    margin-bottom: 10px;
+}
+.ll{
+    font-size: 50%;
+    margin-bottom: 10px;
+}
+.topico3{
+    padding: 20px;  
+    margin-top: 50px;
+    font-size: 150%;
+    margin-left: 40px;
+}
+.plataformas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 40px;
+}
+.p{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.pt{
+    margin-bottom: 10px;
+}
+.topico4{
+    padding: 20px;  
+    margin-top: 50px;
+    font-size: 150%;
+    margin-left: 190px;
+}
+.publishers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 40px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+.p{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.barra{
+    background-color: #d3d3d3;
+}
+.topico5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 100%;
+    padding: 50px;
+    grid-gap: 10px;
+}
+.sobre{
+    grid-column: 1 / 3;
+    grid-row: 1 / 8;
+    font-size: 150%;
+    padding-top: 10px;
+}
+.sobr{
+    grid-column: 3;
+    margin: 0;
+    font-size: 150%;
+    padding-top: 10px;
+}
+.s{
+    grid-column: 3;
+    margin: 0;
+    font-size: 100%;
+}
+.t{
+    grid-column: 1 / 3;
+    grid-row: 2 / 8;
+}
+.silhueta{
+    margin-right: 5px;
+}
+svg{
+    margin-right: 10px;
+}
+.dropdown{
+    margin-left: 700px;
+}
+
+                                                                    /* @media */
+
+
+@media screen and (max-width: 600px){
+    .resto{
+        margin-left: 100px;
+        margin-right: auto;
+        margin-top: auto;
+    }
+    .pesquisa{
+        display: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-size: 100%;
+    }
+    .grid:nth-child(6){
+        display: none;
+    }
+    .grid:nth-child(7){
+        display: none;
+    }
+    .v{
+        grid-column: 1;
+        width: 50%;
+    }
+    
+    .lancamentos{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .glancamentos{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    .dropdown{
+        margin-left: 20px;
+    }
+    .l:nth-child(5){
+        display: none;
+    }
+    .l:nth-child(6){
+        display: none;
+    }
+    .l:nth-child(7){
+        display: none;
+    }
+    .ll{
+        font-size: 100%;
+        margin-bottom: 10px;
+    }
+    .topico5{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-size: 100%;
+        padding: 50px;
+        grid-gap: 10px;
+    }
+    .t{
+        display: none;
+    }
+    .sobre{
+        display: none;
+    }
+    .logo1{
+        display: none;
+    }
+    .topico5{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1200px;
+        font-size: 100%;
+        grid-gap: 10px;
+    }
+    .publishers{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        padding: 40px;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+    }
+    .plataformas{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 1000px;
+    }
+}
