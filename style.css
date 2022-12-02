@@ -1,7 +1,8 @@
-html{
+html {
     height: 100%;
 }
-.header{
+
+.header {
     background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9,24 +10,28 @@ html{
     align-items: center;
     padding: 5px;
 }
-.header a{
+
+.header a {
     text-decoration: none;
     color: white;
 }
-.menu{
+
+.menu {
     display: flex;
 }
-.menu li{
+
+.menu li {
     list-style: none;
     margin: 10px;
 }
-.pesquisa div { 
+
+.pesquisa div {
     margin: 10px;
     display: flex;
 }
 
 
-.footer{
+.footer {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -35,105 +40,133 @@ html{
     padding: 5px;
     color: white;
 }
-.footer a{
-        text-decoration: none;
-        color: white;
+
+.footer a {
+    text-decoration: none;
+    color: white;
 }
 
-                                            /* Corpo do site */
+/* Corpo do site */
 
-.logo1{
+.logo1 {
     grid-column: 1 / 5;
 }
 
-body, ul, li, p{
+body,
+ul,
+li,
+p {
     margin: 0px;
     padding: 0px;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-.resto{
+
+.resto {
     margin-left: 150px;
     margin-right: 100px;
     margin-top: 20px;
 }
-.Destaques{
+
+.Destaques {
     background-color: #d3d3d3;
 }
 
-h1{
+h1 {
     font-size: 150%;
     text-align: center;
 }
-.grid{
+
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     max-width: 1200px;
     font-size: 100%;
 }
-.g{
+
+.gt {
+    grid-column: 2;
+    margin: 0;
+    font-size: 140%;
+    margin-bottom: 10PX;
+}
+.g {
     grid-column: 2;
     margin: 0;
     font-size: 100%;
 }
-.v{
+
+.v {
     grid-column: 1;
     grid-row: 1 / 8;
+    font-size: 120%;
 }
-.topico2{
+
+.topico2 {
     padding: 20px;
     font-size: 150%;
 }
-.glancamentos{
+
+.glancamentos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
-.lancamentos{
+
+.lancamentos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
 }
-.l{
+
+.l {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.lt{
+
+.lt {
     margin-bottom: 10px;
 }
-.ll{
+
+.ll {
     font-size: 50%;
     margin-bottom: 10px;
 }
-.topico3{
-    padding: 20px;  
+
+.topico3 {
+    padding: 20px;
     margin-top: 50px;
     font-size: 150%;
     margin-left: 40px;
 }
-.plataformas{
+
+.plataformas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     padding: 40px;
 }
-.p{
+
+.p {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.pt{
+
+.pt {
     margin-bottom: 10px;
 }
-.topico4{
-    padding: 20px;  
+
+.topico4 {
+    padding: 20px;
     margin-top: 50px;
     font-size: 150%;
     margin-left: 190px;
 }
-.publishers{
+
+.publishers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
@@ -141,15 +174,18 @@ h1{
     margin-left: 150px;
     margin-right: 100px;
 }
-.p{
+
+.p {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.barra{
+
+.barra {
     background-color: #d3d3d3;
 }
-.topico5{
+
+.topico5 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
@@ -158,94 +194,113 @@ h1{
     padding: 50px;
     grid-gap: 10px;
 }
-.sobre{
+
+.sobre {
     grid-column: 1 / 3;
     grid-row: 1 / 8;
     font-size: 150%;
     padding-top: 10px;
 }
-.sobr{
+
+.sobr {
     grid-column: 3;
     margin: 0;
     font-size: 150%;
     padding-top: 10px;
 }
-.s{
+
+.s {
     grid-column: 3;
     margin: 0;
     font-size: 100%;
 }
-.t{
+
+.t {
     grid-column: 1 / 3;
     grid-row: 2 / 8;
 }
-.silhueta{
+
+.silhueta {
     margin-right: 5px;
 }
-svg{
+
+svg {
     margin-right: 10px;
 }
-.dropdown{
+
+.dropdown {
     margin-left: 700px;
 }
 
-                                                                    /* @media */
+/* @media */
 
 
-@media screen and (max-width: 600px){
-    .resto{
+@media screen and (max-width: 600px) {
+    .resto {
         margin-left: 100px;
         margin-right: auto;
         margin-top: auto;
     }
-    .pesquisa{
+
+    .pesquisa {
         display: none;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
         max-width: 1200px;
         font-size: 100%;
     }
-    .grid:nth-child(6){
+
+    .grid:nth-child(6) {
         display: none;
     }
-    .grid:nth-child(7){
+
+    .grid:nth-child(7) {
         display: none;
     }
-    .v{
+
+    .v {
         grid-column: 1;
         width: 50%;
     }
-    
-    .lancamentos{
+
+    .lancamentos {
         display: grid;
         grid-template-columns: 1fr;
         margin: auto;
     }
-    .glancamentos{
+
+    .glancamentos {
         display: grid;
         grid-template-columns: 1fr;
-    
+
     }
-    .dropdown{
+
+    .dropdown {
         margin-left: 20px;
     }
-    .l:nth-child(5){
+
+    .l:nth-child(5) {
         display: none;
     }
-    .l:nth-child(6){
+
+    .l:nth-child(6) {
         display: none;
     }
-    .l:nth-child(7){
+
+    .l:nth-child(7) {
         display: none;
     }
-    .ll{
+
+    .ll {
         font-size: 100%;
         margin-bottom: 10px;
     }
-    .topico5{
+
+    .topico5 {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
@@ -254,23 +309,28 @@ svg{
         padding: 50px;
         grid-gap: 10px;
     }
-    .t{
+
+    .t {
         display: none;
     }
-    .sobre{
+
+    .sobre {
         display: none;
     }
-    .logo1{
+
+    .logo1 {
         display: none;
     }
-    .topico5{
+
+    .topico5 {
         display: grid;
         grid-template-columns: 1fr;
         max-width: 1200px;
         font-size: 100%;
         grid-gap: 10px;
     }
-    .publishers{
+
+    .publishers {
         display: grid;
         grid-template-columns: 1fr;
         margin: auto;
@@ -278,9 +338,48 @@ svg{
         margin-left: 0 auto;
         margin-right: 0 auto;
     }
-    .plataformas{
+
+    .plataformas {
         display: grid;
         grid-template-columns: 1fr;
         margin-right: 1000px;
     }
+
+}
+
+.plat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.card {
+    margin-bottom: 30PX;
+}
+.saibamais{
+    background-color: gray;
+}
+.how-section1{
+    margin-top: -10%;
+    padding: 1%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+
+.how-img img{
+    width: 100%;
+}
+.titulogame{
+    font-size: 800px;
 }
